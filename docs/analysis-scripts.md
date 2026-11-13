@@ -15,6 +15,8 @@ The order in which to run them is given in [reproduce.md](reproduce.md).
 | `tables.py` | `table_us_methods.csv` (methods versus the baseline, with cluster-bootstrap intervals) |
 | `stats_extra.py` | residual diagnostics, ANOVA on rank-transformed F1 (`anova_raw_vs_rank.csv`), Friedman tests with the Iman-Davenport correction for all factors including K (`friedman_summary.csv`, `*_K_baseline.csv`), Wilcoxon statistics (`wilcoxon_vs_baseline_holm_full.csv`), aggregation rules versus FedAvg (`rules_vs_fedavg.csv`), `stats_extra.json` |
 | `ci_sensitivity.py` | `ci_sensitivity.csv`: percentile, BCa, t and Bonferroni intervals and the Wilcoxon test over the nine data-set means |
+| `sensitivity_without_unsw.py` | the same intervals and tests over the eight data sets without UNSW-NB15 (`sensitivity_without_unsw.csv`) and the factorial ANOVA without it (`anova_typeII_without_unsw.csv`) |
+| `duplicates_split.py` | `duplicates_split.csv`: share of the test rows of every fold that also occur in its training part, with the same label and by features only (run on the machine that holds the split folders) |
 | `data_summary.py` | `data_summary.csv`, `class_counts.csv` (data set table, class distributions); needs all nine raw data sets |
 | `partition_car.py` | `partition_car_f1.csv` (stages 2 and 3 on Car Evaluation, fold 1); needs the raw Car Evaluation data |
 | `audit_orig.py` | `orig_audit_<code>_<tag>.csv`: class counts of every client training file written by the original run (run on the machine that holds the split folders) |
@@ -49,7 +51,7 @@ folders of this repository and can be changed with environment variables:
 | `SRC_DIR` | `../src/original` | `rescore_vanished.py`, `rerun_check.py` |
 | `RAW` | `../results/fl_results_raw.csv` | `rescore_vanished.py`, `build_clean.py`, `paths_compare.py`, `rerun_check.py` |
 | `FED_DIR` | `../results/vanished_federations` | `rescore_vanished.py` |
-| `SPLITS` | `~/data_splits` (`audit_orig.py`), `data_splits` (`audit_path1.py`) | folder with the split files written by the original run |
-| `OUT` | `.` | `audit_orig.py`, `audit_path1.py` |
+| `SPLITS` | `~/data_splits` (`audit_orig.py`), `data_splits` (`audit_path1.py`, `duplicates_split.py`) | folder with the split files written by the original run |
+| `OUT` | `.` | `audit_orig.py`, `audit_path1.py`, `duplicates_split.py` |
 | `FOLDS`, `METHODS`, `TAG` | all folds and methods, tag `all` | `us_audit_classes.py`, `us_audit_v2.py` |
 | `FOLD`, `K`, `DATASETS` | fold 1, K = 5, all data sets | `rerun_check.py` |

@@ -21,7 +21,7 @@ Columns of both files:
 | `fold`, `n_clients` | 1 to 5; K = 3 to 10 |
 | `fl_algorithm` | `FedAvg`, `WeightedFedAvg`, `FedMedian`, `FedTrimmedMean`, `FedProx`, `FedBoost`; raw file also `FedBagging` (identical to FedAvg) |
 | `local_model` | `DT`, `RF`, `GB`, `XGB` |
-| `train_time_sec` | time to train the K local models of the federation and compute their probability vectors, plus the aggregation, in seconds |
+| `train_time_sec` | time to train the K local models of the federation and compute their probability vectors, plus the aggregation, in seconds; the undersampling itself is done beforehand by the split script and is not included |
 | `val_*`, `test_*` | accuracy, F1, precision and recall (macro and weighted) and AUC-ROC on the validation and test halves |
 
 Load the analysed runs, for example:
@@ -46,6 +46,9 @@ results/
     anova_*.csv, stats_extra.json, resid_sd_*.csv, friedman_summary.csv, meanranks_*.csv, nemenyi_*.csv,
     wilcoxon_*.csv, rules_vs_fedavg.csv, table_us_methods.csv, ci_sensitivity.csv, per_dataset_delta_pp.csv,
     time_ratio_vs_baseline.csv, delta_prec_recall_f1.csv                        statistics
+    duplicates_split.csv, sensitivity_without_unsw.csv, anova_typeII_without_unsw.csv
+                                 test rows with an exact copy in the training part of their fold, and the
+                                 analysis repeated without UNSW-NB15
     data_summary.csv, class_counts.csv, partition_car_f1.csv, client_*.csv    data sets and client sets
     orig_audit_all.csv, audit_classes_orig.csv, audit_sizes_orig.csv, table3_us_audit.csv, us_audit_per_dataset.csv,
     class_retention_*.csv, delta_vs_kept.csv, example_client_CAR.csv, enn_examples.csv        audit of the client data

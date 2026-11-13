@@ -27,7 +27,16 @@ merged with FedAvg. `analysis/build_clean.py` applies exactly these exclusions.
 
 See the section on limitations of the paper: categorical encoding is fitted on the union of the clients' training data;
 distance-based undersamplers work on unscaled features; exact duplicate rows are not removed (40.2% of UNSW-NB15); the CM
-training labels are noisy according to the source; random forest and XGBoost use all CPU cores during timing.
+training labels are noisy according to the source; random forest and XGBoost use all CPU cores during timing; the
+recorded training time does not include the undersampling step itself.
+
+Because duplicates were kept, 45.1% of the test rows of UNSW-NB15, 9.2% of Letter Recognition and 6.6% of RT-IoT2022
+have an exact copy (same features and label) in the training part of their fold, and at most 1.4% on the other data
+sets ([`results/duplicates_split.csv`](../results/duplicates_split.csv), written by `analysis/duplicates_split.py`).
+Absolute scores on these data sets may therefore be optimistic. Repeated without UNSW-NB15, the analysis reaches the
+same conclusions ([`results/sensitivity_without_unsw.csv`](../results/sensitivity_without_unsw.csv) and
+[`results/anova_typeII_without_unsw.csv`](../results/anova_typeII_without_unsw.csv), written by
+`analysis/sensitivity_without_unsw.py`).
 
 ## Language of the code
 

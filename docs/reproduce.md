@@ -40,12 +40,12 @@ The script runs every analysis script in the right order, then compares each re-
 versions in `results/` and `figures/` are not changed. Expected end of the output:
 
 ```
-Tables compared: 57, different: 0
+Tables compared: 59, different: 0
 ```
 
-On the test system (Linux, two CPU cores) the whole sequence took 6.6 minutes, of which 5.3 minutes were spent in
+On the test system (Linux, two CPU cores) the whole sequence took 6.4 minutes, of which 5.1 minutes were spent in
 `rescore_vanished.py`, which re-trains the models of the 15 affected federations. `--skip-rescore` reuses the stored
-re-scored runs instead. 52 of the 57 tables were identical byte for byte, including `fl_results_clean.csv` and
+re-scored runs instead. 54 of the 59 tables were identical byte for byte, including `fl_results_clean.csv` and
 `table_us_methods.csv`; the other five (the ANOVA tables and the residual standard deviations) differed only by
 floating-point noise, at most 5e-11 relative. All 30 figures were re-drawn.
 
@@ -73,6 +73,7 @@ python nonparam.py
 python tables.py
 python stats_extra.py
 python ci_sensitivity.py
+python sensitivity_without_unsw.py
 # 4. data sets (need ../datasets_original/; without UNSW-NB15 copy the stored tables instead:
 #    cp ../results/data_summary.csv ../results/class_counts.csv .)
 python data_summary.py
@@ -157,6 +158,8 @@ python us_audit_classes.py AIH CAR SVS SLS CM DRY LR
 FOLDS=1 TAG=f1 python us_audit_classes.py RT UNSW
 METHODS=NearMiss,NM3 TAG=nm python us_audit_v2.py RT UNSW
 python tie_check.py
+# test rows with an exact copy in the training part of their fold, on the machine that holds the split folders
+SPLITS=/path/to/data_splits python duplicates_split.py
 # re-run of fold 1 with K = 5 with the original code (about two hours; writes rerun/*.csv)
 mkdir -p rerun && cd rerun && python ../rerun_check.py && cd ..
 ```

@@ -38,7 +38,7 @@ STEPS = [
     # correction of the 360 affected runs and the analysed data set
     "rescore_vanished.py", "build_clean.py",
     # statistics
-    "anova.py", "nonparam.py", "tables.py", "stats_extra.py", "ci_sensitivity.py",
+    "anova.py", "nonparam.py", "tables.py", "stats_extra.py", "ci_sensitivity.py", "sensitivity_without_unsw.py",
     # data sets
     "data_summary.py", "partition_car.py",
     # figures

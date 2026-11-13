@@ -35,8 +35,9 @@ Values are differences in mean test F1-macro over matched runs, in %.
 
 - **The data set and the undersampling method dominate.** The data set explains the largest share of the variance of
   test F1-macro (omega^2 = 0.481), followed by the undersampling method (0.188) and their interaction (0.160).
-- **Mild random undersampling is safe.** Keeping 75% or 50% of the largest class changes F1-macro by +0.02% and -0.12%
-  and shortens local training by 12% and 17%.
+- **Mild random undersampling costs very little.** Keeping 75% or 50% of the largest class changes F1-macro by +0.02%
+  and -0.12% on average and shortens local training by 12% and 17%. The confidence intervals over the nine data sets
+  include zero, and even the most conservative of them (Bonferroni-adjusted) bounds the mean loss at 0.42% and 0.75%.
 - **Several common methods are harmful on clients.** ENN, AllKNN, NearMiss-1, NearMiss-3 and random undersampling to
   the size of the smallest class lower F1-macro by 6% to 20% on average and by up to 45% on single data sets. Depending
   on the method, very little data remains on a client, the majority classes are represented only by the instances
@@ -67,9 +68,11 @@ Values are differences in mean test F1-macro over matched runs, in %.
 Baseline without undersampling: mean test F1-macro 82.2%. All columns are averages over the nine data sets: the change
 in F1-macro is the mean difference to the baseline over matched runs with its 95% cluster-bootstrap confidence interval,
 the data kept is the share of the local training data that remains on a client, and the time saved is 1 minus the ratio
-of the training times in matched FedAvg runs (median per data set). Sources:
-[`results/table_us_methods.csv`](results/table_us_methods.csv) (also with the Holm-adjusted p-values) and
-[`results/us_audit_per_dataset.csv`](results/us_audit_per_dataset.csv).
+of the training times in matched FedAvg runs (median per data set), without the undersampling step itself, which
+for the neighbour-based methods adds a nearest-neighbour search on every client. Sources:
+[`results/table_us_methods.csv`](results/table_us_methods.csv) (also with the Holm-adjusted p-values of the
+Wilcoxon tests over matched runs, which describe how consistent a difference is; the conclusions rest on the
+intervals over data sets) and [`results/us_audit_per_dataset.csv`](results/us_audit_per_dataset.csv).
 
 ## The experiment at a glance
 
@@ -150,7 +153,7 @@ compare them with the published versions:
 python tools/reproduce_all.py
 ```
 
-This takes about 10 minutes and ends with `Tables compared: 57, different: 0`. Tables are written to `analysis/` and
+This takes about 10 minutes and ends with `Tables compared: 59, different: 0`. Tables are written to `analysis/` and
 figures to `analysis/figures/`, so the published versions in `results/` and `figures/` stay untouched. The step by step
 version is in [docs/reproduce.md](docs/reproduce.md#regenerate-the-tables-and-figures).
 
