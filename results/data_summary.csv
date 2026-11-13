@@ -1,0 +1,10 @@
+code,label,instances,features,categorical,numeric,classes,largest,smallest,IR,duplicates_pct,categorical_names
+UNSW,label,257673,42,3,39,2,164673,93000,1.7706774193548387,40.19629530451386,proto;service;state
+RT,Attack_type,123117,83,2,81,12,94659,28,3380.6785714285716,4.219563504633803,proto;service
+LR,lettr,20000,16,0,16,26,813,734,1.1076294277929155,6.660000000000001,
+DRY,Class,13611,16,0,16,7,3546,522,6.793103448275862,0.49959591506869444,
+CM,class,10845,28,0,28,6,7509,100,75.09,0.009220839096357769,
+SLS,36,6435,36,0,36,6,1533,626,2.44888178913738,0.0,
+CAR,class,1728,6,6,0,4,1210,65,18.615384615384617,0.0,buying;maint;doors;persons;lug_boot;safety
+SVS,18,846,18,0,18,4,218,199,1.0954773869346734,0.0,
+AIH,outcome,294,15,14,1,4,166,18,9.222222222222221,1.3605442176870748,country;rep_WHO;rep_other;conf_status;age;sex;date_symptom;hospital;date_hospital;date_outcome;time_to_ hospital;duration_ hospital;duration_ illness;exposure

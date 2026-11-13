@@ -1,0 +1,10 @@
+group,label,unacc,acc,good,vgood
+stage 1,Data set D,1210,384,69,65
+"stage 2, fold 1",Training part,968,307,55,52
+"stage 2, fold 1",Validation half,121,38,7,7
+"stage 2, fold 1",Test half,121,39,7,6
+"stage 3, K = 3",Client 1 of 3,323,102,18,18
+"stage 3, K = 3",Client 2 of 3,323,102,19,17
+"stage 3, K = 3",Client 3 of 3,322,103,18,17
+"stage 3, K = 10",Client 1 of 10,97,31,6,5
+"stage 3, K = 10",Client 10 of 10,96,31,6,5

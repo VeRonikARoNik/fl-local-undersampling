@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Raw data sets and generated client splits (see datasets/README.md)
+datasets_original/
+data_splits/
+
+# Output of a new run of src/*/fl_training.py (the published results are in results/)
+results_rerun/
+results/fl_results.csv
+results/fl_results.xlsx
+results/checkpoint.json
+results/confusion_matrices/
+*.log
+
+# Tables and figures re-created by the analysis scripts (published versions: results/ and figures/)
+analysis/*.csv
+analysis/*.json
+analysis/*.npz
+analysis/figures/
+analysis/rerun/

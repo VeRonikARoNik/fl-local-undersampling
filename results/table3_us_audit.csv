@@ -1,0 +1,10 @@
+method,kept_mean,kept_min,kept_max,fallback_overall,fallback_datasets
+TomekLinks,91.7,80.2,99.4,0.0,none
+RUS75,88.2,80.8,99.0,0.0,none
+AllKNN,77.0,53.1,98.1,0.0,none
+RUS50,76.7,61.6,98.0,0.0,none
+RUS25,65.1,42.3,96.9,0.0,none
+ENN,62.8,32.8,96.5,0.0,none
+NearMiss,52.7,5.5,95.2,11.2,AIH 73%; RT 27%
+RUS,43.5,0.3,95.2,0.0,none
+NM3,36.4,5.0,80.0,11.2,AIH 73%; RT 27%

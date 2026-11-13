@@ -1,0 +1,7 @@
+fl_algorithm,0
+WeightedFedAvg,1.4444444444444444
+FedAvg,2.0
+FedProx,3.0
+FedTrimmedMean,3.7777777777777777
+FedBoost,5.222222222222222
+FedMedian,5.555555555555555

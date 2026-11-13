@@ -1,0 +1,73 @@
+--- src/original/fl_training.py	2026-10-22 01:55:33.491810244 +0200
++++ src/fixed/fl_training.py	2026-10-22 18:05:47.827138435 +0200
+@@ -2,11 +2,25 @@
+ """
+ Skrypt uczenia federacyjnego (FL) na wygenerowanych plikach CSV.
+ 
+-Algorytmy FL:
+-    FedAvg, WeightedFedAvg, FedMedian, FedTrimmedMean,
+-    FedProx, FedBagging, FedBoost
++Protokół: JEDNORUNDOWY (one-shot). Każdy klient trenuje swój model lokalny jeden raz
++i przekazuje serwerowi wektory prawdopodobieństw klas dla przykładów walidacyjnych i testowych.
++Serwer łączy je jedną z reguł poniżej i wybiera klasę o największym prawdopodobieństwie.
++Nie ma rund komunikacji ani odsyłania modelu globalnego do klientów; 5-krotna walidacja
++krzyżowa powtarza ten protokół na pięciu podziałach danych i nie dodaje rund.
++
++Reguły agregacji (identyfikator w kodzie i w wynikach -> nazwa w artykule):
++    FedAvg          -> FedAvg (średnia jednostajna prawdopodobieństw)
++    WeightedFedAvg  -> weighted FedAvg (średnia ważona liczebnością danych klienta po US)
++    FedMedian       -> coordinate-wise median
++    FedTrimmedMean  -> trimmed mean
++    FedProx         -> distance-weighted mean (wagi 1 / (1 + mu * ||P_k - P_mean||_F));
++                       NIE jest to iteracyjny algorytm FedProx, tylko reguła łączenia wyjść
++    FedBoost        -> rank-weighted mean (waga klienta k = 2k / (K(K + 1)));
++                       NIE jest to boosting ani algorytm wielorundowy
++    FedBagging      -> identyczny z FedAvg (w artykule połączony z FedAvg)
++Identyfikatory pozostawiono bez zmian, aby zgadzały się z opublikowanymi wynikami.
+ 
+-Modele lokalne: Random Forest (RF), Gradient Boosting (GB), Decision Tree (DT)
++Modele lokalne: Decision Tree (DT), Random Forest (RF), Gradient Boosting (GB), XGBoost (XGB)
+ 
+ Ścieżki:
+     - baseline                    (bez undersamplingu)
+@@ -153,9 +167,9 @@
+ MIN_CLIENTS  = 3
+ MAX_CLIENTS  = 10
+ RANDOM_SEED  = 42
+-FEDPROX_MU   = 0.01   # współczynnik regularyzacji FedProx
++FEDPROX_MU   = 0.01   # mu w regule ważonej odległością ("FedProx"); jednorundowa reguła łączenia, nie trening FedProx
+ TRIMMED_FRAC = 0.1    # % skrajnych wartości do odcięcia w FedTrimmedMean
+-FL_ROUNDS    = 3      # liczba rund dla FedBoost
++# (usunięto nieużywaną stałą FL_ROUNDS: protokół jest jednorundowy, żadna reguła nie używa rund)
+ 
+ DATASETS = {
+     "RT":   "RT-IoT2022(RT)",
+@@ -246,18 +260,17 @@
+ 
+ 
+ def encode_y(y_train: pd.Series, y_val: pd.Series, y_test: pd.Series):
+-    """Kodowanie etykiet. Fit na train."""
+-    le = LabelEncoder()
+-    y_tr = le.fit_transform(y_train.astype(str))
+-
+-    def safe_transform(y):
+-        known = set(le.classes_)
+-        return np.array([
+-            le.transform([str(v)])[0] if str(v) in known else 0
+-            for v in y
+-        ])
++    """Label coding over all classes of the training, validation and test labels.
+ 
+-    return y_tr, safe_transform(y_val), safe_transform(y_test), le
++    Fixed: the original version fitted the encoder on the clients' training labels only and mapped every validation or
++    test label it had not seen to code 0. When undersampling removed a class from every client, the validation and test
++    instances of that class were therefore scored as the first class and the class dropped out of the macro averages.
++    Coding over all classes keeps the relative order of the training classes, so the trained models and their
++    predictions are unchanged; a class that no client holds receives probability 0 and counts in the evaluation."""
++    le = LabelEncoder()
++    le.fit(pd.concat([y_train, y_val, y_test]).astype(str))
++    return (le.transform(y_train.astype(str)), le.transform(y_val.astype(str)),
++            le.transform(y_test.astype(str)), le)
+ 
+ 
+ # ============================================

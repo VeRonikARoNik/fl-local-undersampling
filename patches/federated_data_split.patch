@@ -1,0 +1,18 @@
+--- original/federated_data_split.py	2026-10-22 01:55:33.491403638 +0200
++++ fixed/federated_data_split.py	2026-10-22 01:55:33.531534114 +0200
+@@ -359,9 +359,12 @@
+         name = _clean_name(path.stem if path.stem else path.name)
+     elif path.is_dir():
+         # Lista plików do ignorowania
+-        IGNORE_FILES_LOWER = ['.gitignore', '.ds_store', 'index', 'license', 'readme', 
+-                              'sha256sums', 'checksums', 'manifest', 'license.txt', 
+-                              'readme.txt', 'sha256sums.txt', 'checksums.txt']
++        IGNORE_FILES_LOWER = ['.gitignore', '.ds_store', 'index', 'license', 'readme',
++                              'sha256sums', 'checksums', 'manifest', 'license.txt',
++                              'readme.txt', 'sha256sums.txt', 'checksums.txt',
++                              # FIX: description files of soybean+large / statlog must not be read as data
++                              'vehicle.doc', 'sat.doc', 'soybean-explanation',
++                              'stepp-order', 'fisher-order', 'why-various-soybean-databases']
+         
+         # Szukaj rekursywnie w folderze i podfolderach
+         data_files = (list(path.glob('**/*.csv')) + list(path.glob('**/*.data')) + 

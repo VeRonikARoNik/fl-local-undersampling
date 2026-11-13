@@ -1,0 +1,19 @@
+year,country,rep_WHO,rep_other,conf_status,age,sex,date_symptom,hospital,date_hospital,outcome,date_outcome,time_to_ hospital,duration_ hospital,duration_ illness,exposure
+2007,Indonesia,n.d.,2007-03-27 00:00:00,suspected,22,female,n.d.,n.d.,n.d.,fatal,2007-03-24 00:00:00,n.a.,n.a.,n.a.,no
+2008,China,2008-02-26 00:00:00,2008-02-25 00:00:00,confirmed,44,female,2008-02-16 00:00:00,yes,2008-02-22 00:00:00,fatal,2008-02-25 00:00:00,6,3,9,yes
+2008,Indonesia,2009-01-22 00:00:00,2009-01-21 00:00:00,confirmed,5,female,2008-12-23 00:00:00,yes,2008-12-27 00:00:00,fatal,2009-01-02 00:00:00,4,6,10,yes
+2007,Vietnam,2007-08-31 00:00:00,2007-08-31 00:00:00,confirmed,20,male,2007-06-02 00:00:00,yes,2007-06-08 00:00:00,fatal,2007-06-10 00:00:00,6,2,8,n.d.
+2008,Vietnam,n.d.,2008-02-21 00:00:00,suspected,40,male,n.d.,n.d.,2008-02-19 00:00:00,fatal,2008-02-19 00:00:00,n.a.,0,n.a.,n.d.
+2008,Egypt,2008-04-08 00:00:00,2008-04-06 00:00:00,confirmed,19,male,2008-03-30 00:00:00,yes,2008-03-31 00:00:00,fatal,2008-04-04 00:00:00,1,4,5,yes
+2009,Vietnam,n.d.,2009-03-22 00:00:00,suspected,26,female,n.d.,yes,2009-03-16 00:00:00,fatal,2009-03-20 00:00:00,n.a.,4,n.a.,n.d.
+2007,Indonesia,2007-05-16 00:00:00,2007-05-07 00:00:00,confirmed,29,female,2007-04-27 00:00:00,yes,2007-04-28 00:00:00,fatal,2007-05-03 00:00:00,1,2,6,no
+2007,Indonesia,2007-05-16 00:00:00,2007-05-16 00:00:00,confirmed,29,female,2007-03-20 00:00:00,yes,2007-03-23 00:00:00,fatal,2007-03-28 00:00:00,3,5,8,n.d.
+2006,Indonesia,2006-11-14 00:00:00,2006-11-13 00:00:00,confirmed,35,female,2006-11-07 00:00:00,yes,2006-11-10 00:00:00,fatal,2006-11-28 00:00:00,3,18,21,yes
+2007,Indonesia,2007-05-16 00:00:00,2007-05-16 00:00:00,confirmed,16,male,2007-03-04 00:00:00,yes,2007-03-24 00:00:00,fatal,2007-03-25 00:00:00,20,1,21,n.d.
+2008,Indonesia,n.d.,2008-03-13 00:00:00,probable,n.d.,n.d.,n.d.,yes,n.d.,n.d.,n.d.,n.a.,n.a.,n.a.,n.d.
+2007,Indonesia,n.d.,2007-04-16 00:00:00,probable,n.d.,n.d.,n.d.,yes,2007-04-14 00:00:00,n.d.,n.d.,n.a.,n.a.,n.a.,yes
+2009,Indonesia,n.d.,2009-09-04 00:00:00,suspected,n.d.,female,n.d.,n.d.,n.d.,n.d.,n.d.,n.a.,n.a.,n.a.,n.d.
+2010,Egypt,2010-01-27 00:00:00,2010-01-27 00:00:00,confirmed,1,male,2010-01-07 00:00:00,yes,2010-01-12 00:00:00,under treatment,n.d.,5,n.a.,n.a.,yes
+2010,Vietnam,2010-03-04 00:00:00,2010-02-24 00:00:00,confirmed,3,female,2010-01-27 00:00:00,yes,2010-01-28 00:00:00,under treatment,n.d.,1,n.a.,n.a.,yes
+2010,Egypt,2010-01-27 00:00:00,2010-01-27 00:00:00,confirmed,3,male,2010-01-19 00:00:00,yes,2010-01-21 00:00:00,under treatment,n.d.,2,n.a.,n.a.,yes
+2010,Egypt,2010-03-12 00:00:00,2010-03-12 00:00:00,confirmed,1,male,n.d.,yes,2010-03-02 00:00:00,under treatment,n.d.,n.a.,n.a.,n.a.,yes

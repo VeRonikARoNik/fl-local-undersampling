@@ -1,0 +1,35 @@
+--- original/federated_data_split_path1.py	2026-10-22 01:55:33.491501816 +0200
++++ fixed/federated_data_split_path1.py	2026-10-22 01:56:12.549245362 +0200
+@@ -295,7 +295,9 @@
+     )
+ 
+     X = df.drop(columns=[label_column])
+-    y = df[label_column]
++    # FIX: integer-coded labels for the samplers (string labels break NeighbourhoodCleaningRule
++    # with SciPy >= 1.15); rows are restored from sample_indices_, so original labels are kept.
++    y = pd.Series(pd.factorize(df[label_column])[0], index=df.index)
+ 
+     # Kodowanie kategoryczne dla metod opartych na odległości
+     X_encoded = X.copy()
+@@ -429,8 +431,9 @@
+     logger.info(f"Etykieta: '{label_column}' | Próbki przed US: {len(df)}")
+     logger.info(f"{'='*60}")
+ 
+-    # --- Undersampling na całym D ---
+-    df_us = apply_undersampling(df, label_column, method, random_state)
++    # FIX: no undersampling of the whole D here; the 5CV split is made on the original D
++    # and undersampling is applied to the training part Ditr only (see below).
++    df_us = df
+ 
+     # --- Folder wyjściowy: undersampling_before_split/METHOD/Dataset(ACR)/ ---
+     output_path = Path(output_base_path) / method / dataset_out_name
+@@ -448,6 +451,9 @@
+         Di = folds[i - 1]
+         Ditr = pd.concat([folds[j] for j in range(N_FOLDS) if j != i - 1], ignore_index=True)
+         Di_val, Di_test = stratified_val_test_split(Di, label_column, random_state + i)
++        # FIX: undersample the training part only (global, before the client split);
++        # validation and test halves keep the original distribution.
++        Ditr = apply_undersampling(Ditr, label_column, method, random_state + i)
+ 
+         fold_path = output_path / f"f{fname}_fold_{i}"
+         fold_path.mkdir(parents=True, exist_ok=True)

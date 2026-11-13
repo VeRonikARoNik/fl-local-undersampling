@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the article below."
+type: software
+title: "Code and results for: Tree-based Local Learners in Federated Learning with Local Undersampling: A Multi-Algorithm Empirical Study across Nine Tabular Benchmarks"
+abstract: "Code, raw results and analysis scripts of a full factorial experiment (86 400 analysed federated runs) on undersampling applied independently on each client of one-shot federated ensembles of tree-based learners, on nine public tabular data sets."
+authors:
+  - family-names: Pieper
+    given-names: Veronika
+    affiliation: Gdynia Maritime University
+  - family-names: Czarnowski
+    given-names: Ireneusz
+    affiliation: Gdynia Maritime University
+repository-code: "https://github.com/VeRonikARoNik/fl-local-undersampling"
+license: MIT
+keywords:
+  - federated learning
+  - class imbalance
+  - undersampling
+  - instance selection
+  - tree-based models
+  - tabular data
+  - one-shot aggregation
+  - statistical comparison of classifiers
+preferred-citation:
+  type: unpublished
+  title: "Tree-based Local Learners in Federated Learning with Local Undersampling: A Multi-Algorithm Empirical Study across Nine Tabular Benchmarks"
+  authors:
+    - family-names: Pieper
+      given-names: Veronika
+      affiliation: Gdynia Maritime University
+    - family-names: Czarnowski
+      given-names: Ireneusz
+      affiliation: Gdynia Maritime University
+  year: 2026
+  notes: "Manuscript in preparation"

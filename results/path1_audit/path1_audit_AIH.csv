@@ -1,0 +1,496 @@
+dataset,method,fold,part,cls,n
+AIH,none,1,test,__rows__,30
+AIH,none,1,test,fatal,17
+AIH,none,1,test,under treatment,9
+AIH,none,1,test,cured,3
+AIH,none,1,test,n.d.,1
+AIH,none,1,train,__rows__,235
+AIH,none,1,train,fatal,132
+AIH,none,1,train,under treatment,68
+AIH,none,1,train,cured,20
+AIH,none,1,train,n.d.,15
+AIH,none,2,test,__rows__,30
+AIH,none,2,test,fatal,17
+AIH,none,2,test,under treatment,9
+AIH,none,2,test,cured,2
+AIH,none,2,test,n.d.,2
+AIH,none,2,train,__rows__,235
+AIH,none,2,train,fatal,133
+AIH,none,2,train,under treatment,68
+AIH,none,2,train,cured,20
+AIH,none,2,train,n.d.,14
+AIH,none,3,test,__rows__,30
+AIH,none,3,test,fatal,17
+AIH,none,3,test,under treatment,9
+AIH,none,3,test,n.d.,2
+AIH,none,3,test,cured,2
+AIH,none,3,train,__rows__,235
+AIH,none,3,train,fatal,133
+AIH,none,3,train,under treatment,68
+AIH,none,3,train,cured,20
+AIH,none,3,train,n.d.,14
+AIH,none,4,test,__rows__,30
+AIH,none,4,test,fatal,17
+AIH,none,4,test,under treatment,9
+AIH,none,4,test,cured,2
+AIH,none,4,test,n.d.,2
+AIH,none,4,train,__rows__,235
+AIH,none,4,train,fatal,133
+AIH,none,4,train,under treatment,68
+AIH,none,4,train,cured,20
+AIH,none,4,train,n.d.,14
+AIH,none,5,test,__rows__,29
+AIH,none,5,test,fatal,16
+AIH,none,5,test,under treatment,9
+AIH,none,5,test,cured,2
+AIH,none,5,test,n.d.,2
+AIH,none,5,train,__rows__,236
+AIH,none,5,train,fatal,133
+AIH,none,5,train,under treatment,68
+AIH,none,5,train,cured,20
+AIH,none,5,train,n.d.,15
+AIH,RUS,1,test,__rows__,8
+AIH,RUS,1,test,cured,2
+AIH,RUS,1,test,n.d.,2
+AIH,RUS,1,test,under treatment,2
+AIH,RUS,1,test,fatal,2
+AIH,RUS,1,train,__rows__,57
+AIH,RUS,1,train,n.d.,15
+AIH,RUS,1,train,cured,14
+AIH,RUS,1,train,fatal,14
+AIH,RUS,1,train,under treatment,14
+AIH,RUS,2,test,__rows__,8
+AIH,RUS,2,test,fatal,2
+AIH,RUS,2,test,under treatment,2
+AIH,RUS,2,test,cured,2
+AIH,RUS,2,test,n.d.,2
+AIH,RUS,2,train,__rows__,57
+AIH,RUS,2,train,fatal,15
+AIH,RUS,2,train,cured,14
+AIH,RUS,2,train,under treatment,14
+AIH,RUS,2,train,n.d.,14
+AIH,RUS,3,test,__rows__,7
+AIH,RUS,3,test,cured,2
+AIH,RUS,3,test,n.d.,2
+AIH,RUS,3,test,under treatment,2
+AIH,RUS,3,test,fatal,1
+AIH,RUS,3,train,__rows__,58
+AIH,RUS,3,train,fatal,15
+AIH,RUS,3,train,under treatment,15
+AIH,RUS,3,train,cured,14
+AIH,RUS,3,train,n.d.,14
+AIH,RUS,4,test,__rows__,7
+AIH,RUS,4,test,fatal,2
+AIH,RUS,4,test,under treatment,2
+AIH,RUS,4,test,n.d.,2
+AIH,RUS,4,test,cured,1
+AIH,RUS,4,train,__rows__,58
+AIH,RUS,4,train,cured,15
+AIH,RUS,4,train,under treatment,15
+AIH,RUS,4,train,n.d.,14
+AIH,RUS,4,train,fatal,14
+AIH,RUS,5,test,__rows__,7
+AIH,RUS,5,test,fatal,2
+AIH,RUS,5,test,under treatment,2
+AIH,RUS,5,test,n.d.,2
+AIH,RUS,5,test,cured,1
+AIH,RUS,5,train,__rows__,58
+AIH,RUS,5,train,n.d.,15
+AIH,RUS,5,train,cured,15
+AIH,RUS,5,train,fatal,14
+AIH,RUS,5,train,under treatment,14
+AIH,RUS25,1,test,__rows__,17
+AIH,RUS25,1,test,under treatment,9
+AIH,RUS25,1,test,fatal,4
+AIH,RUS25,1,test,cured,3
+AIH,RUS25,1,test,n.d.,1
+AIH,RUS25,1,train,__rows__,135
+AIH,RUS25,1,train,under treatment,68
+AIH,RUS25,1,train,fatal,32
+AIH,RUS25,1,train,cured,20
+AIH,RUS25,1,train,n.d.,15
+AIH,RUS25,2,test,__rows__,17
+AIH,RUS25,2,test,under treatment,8
+AIH,RUS25,2,test,fatal,4
+AIH,RUS25,2,test,cured,3
+AIH,RUS25,2,test,n.d.,2
+AIH,RUS25,2,train,__rows__,135
+AIH,RUS25,2,train,under treatment,68
+AIH,RUS25,2,train,fatal,33
+AIH,RUS25,2,train,cured,20
+AIH,RUS25,2,train,n.d.,14
+AIH,RUS25,3,test,__rows__,17
+AIH,RUS25,3,test,under treatment,9
+AIH,RUS25,3,test,fatal,4
+AIH,RUS25,3,test,cured,2
+AIH,RUS25,3,test,n.d.,2
+AIH,RUS25,3,train,__rows__,135
+AIH,RUS25,3,train,under treatment,68
+AIH,RUS25,3,train,fatal,33
+AIH,RUS25,3,train,cured,20
+AIH,RUS25,3,train,n.d.,14
+AIH,RUS25,4,test,__rows__,17
+AIH,RUS25,4,test,under treatment,9
+AIH,RUS25,4,test,fatal,4
+AIH,RUS25,4,test,cured,2
+AIH,RUS25,4,test,n.d.,2
+AIH,RUS25,4,train,__rows__,135
+AIH,RUS25,4,train,under treatment,68
+AIH,RUS25,4,train,fatal,33
+AIH,RUS25,4,train,cured,20
+AIH,RUS25,4,train,n.d.,14
+AIH,RUS25,5,test,__rows__,17
+AIH,RUS25,5,test,under treatment,9
+AIH,RUS25,5,test,fatal,4
+AIH,RUS25,5,test,cured,3
+AIH,RUS25,5,test,n.d.,1
+AIH,RUS25,5,train,__rows__,136
+AIH,RUS25,5,train,under treatment,68
+AIH,RUS25,5,train,fatal,33
+AIH,RUS25,5,train,cured,20
+AIH,RUS25,5,train,n.d.,15
+AIH,RUS50,1,test,__rows__,22
+AIH,RUS50,1,test,under treatment,9
+AIH,RUS50,1,test,fatal,9
+AIH,RUS50,1,test,n.d.,2
+AIH,RUS50,1,test,cured,2
+AIH,RUS50,1,train,__rows__,168
+AIH,RUS50,1,train,under treatment,68
+AIH,RUS50,1,train,fatal,66
+AIH,RUS50,1,train,cured,20
+AIH,RUS50,1,train,n.d.,14
+AIH,RUS50,2,test,__rows__,21
+AIH,RUS50,2,test,fatal,9
+AIH,RUS50,2,test,under treatment,8
+AIH,RUS50,2,test,cured,3
+AIH,RUS50,2,test,n.d.,1
+AIH,RUS50,2,train,__rows__,169
+AIH,RUS50,2,train,under treatment,68
+AIH,RUS50,2,train,fatal,66
+AIH,RUS50,2,train,cured,20
+AIH,RUS50,2,train,n.d.,15
+AIH,RUS50,3,test,__rows__,21
+AIH,RUS50,3,test,under treatment,9
+AIH,RUS50,3,test,fatal,8
+AIH,RUS50,3,test,cured,2
+AIH,RUS50,3,test,n.d.,2
+AIH,RUS50,3,train,__rows__,169
+AIH,RUS50,3,train,under treatment,68
+AIH,RUS50,3,train,fatal,66
+AIH,RUS50,3,train,cured,20
+AIH,RUS50,3,train,n.d.,15
+AIH,RUS50,4,test,__rows__,21
+AIH,RUS50,4,test,under treatment,9
+AIH,RUS50,4,test,fatal,8
+AIH,RUS50,4,test,n.d.,2
+AIH,RUS50,4,test,cured,2
+AIH,RUS50,4,train,__rows__,169
+AIH,RUS50,4,train,under treatment,68
+AIH,RUS50,4,train,fatal,67
+AIH,RUS50,4,train,cured,20
+AIH,RUS50,4,train,n.d.,14
+AIH,RUS50,5,test,__rows__,21
+AIH,RUS50,5,test,under treatment,9
+AIH,RUS50,5,test,fatal,8
+AIH,RUS50,5,test,cured,2
+AIH,RUS50,5,test,n.d.,2
+AIH,RUS50,5,train,__rows__,169
+AIH,RUS50,5,train,under treatment,68
+AIH,RUS50,5,train,fatal,67
+AIH,RUS50,5,train,cured,20
+AIH,RUS50,5,train,n.d.,14
+AIH,RUS75,1,test,__rows__,26
+AIH,RUS75,1,test,fatal,13
+AIH,RUS75,1,test,under treatment,9
+AIH,RUS75,1,test,n.d.,2
+AIH,RUS75,1,test,cured,2
+AIH,RUS75,1,train,__rows__,201
+AIH,RUS75,1,train,fatal,99
+AIH,RUS75,1,train,under treatment,68
+AIH,RUS75,1,train,cured,20
+AIH,RUS75,1,train,n.d.,14
+AIH,RUS75,2,test,__rows__,26
+AIH,RUS75,2,test,fatal,13
+AIH,RUS75,2,test,under treatment,9
+AIH,RUS75,2,test,n.d.,2
+AIH,RUS75,2,test,cured,2
+AIH,RUS75,2,train,__rows__,201
+AIH,RUS75,2,train,fatal,99
+AIH,RUS75,2,train,under treatment,68
+AIH,RUS75,2,train,cured,20
+AIH,RUS75,2,train,n.d.,14
+AIH,RUS75,3,test,__rows__,25
+AIH,RUS75,3,test,fatal,12
+AIH,RUS75,3,test,under treatment,9
+AIH,RUS75,3,test,cured,2
+AIH,RUS75,3,test,n.d.,2
+AIH,RUS75,3,train,__rows__,202
+AIH,RUS75,3,train,fatal,99
+AIH,RUS75,3,train,under treatment,68
+AIH,RUS75,3,train,cured,20
+AIH,RUS75,3,train,n.d.,15
+AIH,RUS75,4,test,__rows__,25
+AIH,RUS75,4,test,fatal,13
+AIH,RUS75,4,test,under treatment,9
+AIH,RUS75,4,test,cured,2
+AIH,RUS75,4,test,n.d.,1
+AIH,RUS75,4,train,__rows__,202
+AIH,RUS75,4,train,fatal,99
+AIH,RUS75,4,train,under treatment,68
+AIH,RUS75,4,train,cured,20
+AIH,RUS75,4,train,n.d.,15
+AIH,RUS75,5,test,__rows__,25
+AIH,RUS75,5,test,fatal,12
+AIH,RUS75,5,test,under treatment,9
+AIH,RUS75,5,test,n.d.,2
+AIH,RUS75,5,test,cured,2
+AIH,RUS75,5,train,__rows__,202
+AIH,RUS75,5,train,fatal,100
+AIH,RUS75,5,train,under treatment,68
+AIH,RUS75,5,train,cured,20
+AIH,RUS75,5,train,n.d.,14
+AIH,NearMiss,1,test,__rows__,8
+AIH,NearMiss,1,test,cured,2
+AIH,NearMiss,1,test,n.d.,2
+AIH,NearMiss,1,test,under treatment,2
+AIH,NearMiss,1,test,fatal,2
+AIH,NearMiss,1,train,__rows__,57
+AIH,NearMiss,1,train,n.d.,15
+AIH,NearMiss,1,train,cured,14
+AIH,NearMiss,1,train,fatal,14
+AIH,NearMiss,1,train,under treatment,14
+AIH,NearMiss,2,test,__rows__,8
+AIH,NearMiss,2,test,fatal,2
+AIH,NearMiss,2,test,under treatment,2
+AIH,NearMiss,2,test,cured,2
+AIH,NearMiss,2,test,n.d.,2
+AIH,NearMiss,2,train,__rows__,57
+AIH,NearMiss,2,train,fatal,15
+AIH,NearMiss,2,train,cured,14
+AIH,NearMiss,2,train,under treatment,14
+AIH,NearMiss,2,train,n.d.,14
+AIH,NearMiss,3,test,__rows__,7
+AIH,NearMiss,3,test,cured,2
+AIH,NearMiss,3,test,n.d.,2
+AIH,NearMiss,3,test,under treatment,2
+AIH,NearMiss,3,test,fatal,1
+AIH,NearMiss,3,train,__rows__,58
+AIH,NearMiss,3,train,fatal,15
+AIH,NearMiss,3,train,under treatment,15
+AIH,NearMiss,3,train,cured,14
+AIH,NearMiss,3,train,n.d.,14
+AIH,NearMiss,4,test,__rows__,7
+AIH,NearMiss,4,test,fatal,2
+AIH,NearMiss,4,test,under treatment,2
+AIH,NearMiss,4,test,n.d.,2
+AIH,NearMiss,4,test,cured,1
+AIH,NearMiss,4,train,__rows__,58
+AIH,NearMiss,4,train,cured,15
+AIH,NearMiss,4,train,under treatment,15
+AIH,NearMiss,4,train,n.d.,14
+AIH,NearMiss,4,train,fatal,14
+AIH,NearMiss,5,test,__rows__,7
+AIH,NearMiss,5,test,fatal,2
+AIH,NearMiss,5,test,under treatment,2
+AIH,NearMiss,5,test,n.d.,2
+AIH,NearMiss,5,test,cured,1
+AIH,NearMiss,5,train,__rows__,58
+AIH,NearMiss,5,train,n.d.,15
+AIH,NearMiss,5,train,cured,15
+AIH,NearMiss,5,train,fatal,14
+AIH,NearMiss,5,train,under treatment,14
+AIH,NM3,1,test,__rows__,6
+AIH,NM3,1,test,fatal,2
+AIH,NM3,1,test,n.d.,2
+AIH,NM3,1,test,under treatment,1
+AIH,NM3,1,test,cured,1
+AIH,NM3,1,train,__rows__,45
+AIH,NM3,1,train,fatal,14
+AIH,NM3,1,train,n.d.,14
+AIH,NM3,1,train,under treatment,11
+AIH,NM3,1,train,cured,6
+AIH,NM3,2,test,__rows__,6
+AIH,NM3,2,test,fatal,2
+AIH,NM3,2,test,n.d.,2
+AIH,NM3,2,test,cured,1
+AIH,NM3,2,test,under treatment,1
+AIH,NM3,2,train,__rows__,45
+AIH,NM3,2,train,fatal,14
+AIH,NM3,2,train,n.d.,14
+AIH,NM3,2,train,under treatment,11
+AIH,NM3,2,train,cured,6
+AIH,NM3,3,test,__rows__,6
+AIH,NM3,3,test,n.d.,2
+AIH,NM3,3,test,fatal,2
+AIH,NM3,3,test,cured,1
+AIH,NM3,3,test,under treatment,1
+AIH,NM3,3,train,__rows__,46
+AIH,NM3,3,train,fatal,14
+AIH,NM3,3,train,n.d.,14
+AIH,NM3,3,train,under treatment,12
+AIH,NM3,3,train,cured,6
+AIH,NM3,4,test,__rows__,6
+AIH,NM3,4,test,fatal,3
+AIH,NM3,4,test,n.d.,2
+AIH,NM3,4,test,under treatment,1
+AIH,NM3,4,train,__rows__,46
+AIH,NM3,4,train,n.d.,15
+AIH,NM3,4,train,fatal,13
+AIH,NM3,4,train,under treatment,11
+AIH,NM3,4,train,cured,7
+AIH,NM3,5,test,__rows__,6
+AIH,NM3,5,test,under treatment,2
+AIH,NM3,5,test,n.d.,2
+AIH,NM3,5,test,fatal,1
+AIH,NM3,5,test,cured,1
+AIH,NM3,5,train,__rows__,46
+AIH,NM3,5,train,n.d.,15
+AIH,NM3,5,train,fatal,13
+AIH,NM3,5,train,under treatment,11
+AIH,NM3,5,train,cured,7
+AIH,ENN,1,test,__rows__,22
+AIH,ENN,1,test,fatal,13
+AIH,ENN,1,test,under treatment,6
+AIH,ENN,1,test,n.d.,2
+AIH,ENN,1,test,cured,1
+AIH,ENN,1,train,__rows__,173
+AIH,ENN,1,train,fatal,105
+AIH,ENN,1,train,under treatment,50
+AIH,ENN,1,train,n.d.,15
+AIH,ENN,1,train,cured,3
+AIH,ENN,2,test,__rows__,22
+AIH,ENN,2,test,fatal,12
+AIH,ENN,2,test,under treatment,9
+AIH,ENN,2,test,n.d.,1
+AIH,ENN,2,train,__rows__,173
+AIH,ENN,2,train,fatal,106
+AIH,ENN,2,train,under treatment,50
+AIH,ENN,2,train,n.d.,14
+AIH,ENN,2,train,cured,3
+AIH,ENN,3,test,__rows__,22
+AIH,ENN,3,test,fatal,13
+AIH,ENN,3,test,under treatment,6
+AIH,ENN,3,test,n.d.,3
+AIH,ENN,3,train,__rows__,174
+AIH,ENN,3,train,fatal,106
+AIH,ENN,3,train,under treatment,51
+AIH,ENN,3,train,n.d.,14
+AIH,ENN,3,train,cured,3
+AIH,ENN,4,test,__rows__,22
+AIH,ENN,4,test,fatal,11
+AIH,ENN,4,test,under treatment,8
+AIH,ENN,4,test,n.d.,3
+AIH,ENN,4,train,__rows__,174
+AIH,ENN,4,train,fatal,106
+AIH,ENN,4,train,under treatment,51
+AIH,ENN,4,train,n.d.,14
+AIH,ENN,4,train,cured,3
+AIH,ENN,5,test,__rows__,22
+AIH,ENN,5,test,fatal,14
+AIH,ENN,5,test,under treatment,7
+AIH,ENN,5,test,n.d.,1
+AIH,ENN,5,train,__rows__,174
+AIH,ENN,5,train,fatal,105
+AIH,ENN,5,train,under treatment,50
+AIH,ENN,5,train,n.d.,15
+AIH,ENN,5,train,cured,4
+AIH,AllKNN,1,test,__rows__,25
+AIH,AllKNN,1,test,fatal,15
+AIH,AllKNN,1,test,under treatment,7
+AIH,AllKNN,1,test,n.d.,2
+AIH,AllKNN,1,test,cured,1
+AIH,AllKNN,1,train,__rows__,197
+AIH,AllKNN,1,train,fatal,117
+AIH,AllKNN,1,train,under treatment,57
+AIH,AllKNN,1,train,n.d.,15
+AIH,AllKNN,1,train,cured,8
+AIH,AllKNN,2,test,__rows__,25
+AIH,AllKNN,2,test,fatal,15
+AIH,AllKNN,2,test,under treatment,7
+AIH,AllKNN,2,test,n.d.,2
+AIH,AllKNN,2,test,cured,1
+AIH,AllKNN,2,train,__rows__,197
+AIH,AllKNN,2,train,fatal,117
+AIH,AllKNN,2,train,under treatment,57
+AIH,AllKNN,2,train,n.d.,15
+AIH,AllKNN,2,train,cured,8
+AIH,AllKNN,3,test,__rows__,25
+AIH,AllKNN,3,test,fatal,15
+AIH,AllKNN,3,test,under treatment,7
+AIH,AllKNN,3,test,n.d.,2
+AIH,AllKNN,3,test,cured,1
+AIH,AllKNN,3,train,__rows__,198
+AIH,AllKNN,3,train,fatal,118
+AIH,AllKNN,3,train,under treatment,58
+AIH,AllKNN,3,train,n.d.,14
+AIH,AllKNN,3,train,cured,8
+AIH,AllKNN,4,test,__rows__,25
+AIH,AllKNN,4,test,fatal,15
+AIH,AllKNN,4,test,under treatment,7
+AIH,AllKNN,4,test,n.d.,2
+AIH,AllKNN,4,test,cured,1
+AIH,AllKNN,4,train,__rows__,198
+AIH,AllKNN,4,train,fatal,118
+AIH,AllKNN,4,train,under treatment,58
+AIH,AllKNN,4,train,n.d.,14
+AIH,AllKNN,4,train,cured,8
+AIH,AllKNN,5,test,__rows__,25
+AIH,AllKNN,5,test,fatal,15
+AIH,AllKNN,5,test,under treatment,7
+AIH,AllKNN,5,test,n.d.,2
+AIH,AllKNN,5,test,cured,1
+AIH,AllKNN,5,train,__rows__,198
+AIH,AllKNN,5,train,fatal,118
+AIH,AllKNN,5,train,under treatment,58
+AIH,AllKNN,5,train,n.d.,14
+AIH,AllKNN,5,train,cured,8
+AIH,TomekLinks,1,test,__rows__,28
+AIH,TomekLinks,1,test,fatal,16
+AIH,TomekLinks,1,test,under treatment,8
+AIH,TomekLinks,1,test,cured,2
+AIH,TomekLinks,1,test,n.d.,2
+AIH,TomekLinks,1,train,__rows__,219
+AIH,TomekLinks,1,train,fatal,126
+AIH,TomekLinks,1,train,under treatment,62
+AIH,TomekLinks,1,train,cured,16
+AIH,TomekLinks,1,train,n.d.,15
+AIH,TomekLinks,2,test,__rows__,28
+AIH,TomekLinks,2,test,fatal,16
+AIH,TomekLinks,2,test,under treatment,8
+AIH,TomekLinks,2,test,cured,2
+AIH,TomekLinks,2,test,n.d.,2
+AIH,TomekLinks,2,train,__rows__,219
+AIH,TomekLinks,2,train,fatal,126
+AIH,TomekLinks,2,train,under treatment,63
+AIH,TomekLinks,2,train,cured,16
+AIH,TomekLinks,2,train,n.d.,14
+AIH,TomekLinks,3,test,__rows__,28
+AIH,TomekLinks,3,test,fatal,16
+AIH,TomekLinks,3,test,under treatment,8
+AIH,TomekLinks,3,test,cured,2
+AIH,TomekLinks,3,test,n.d.,2
+AIH,TomekLinks,3,train,__rows__,219
+AIH,TomekLinks,3,train,fatal,126
+AIH,TomekLinks,3,train,under treatment,63
+AIH,TomekLinks,3,train,cured,16
+AIH,TomekLinks,3,train,n.d.,14
+AIH,TomekLinks,4,test,__rows__,28
+AIH,TomekLinks,4,test,fatal,16
+AIH,TomekLinks,4,test,under treatment,8
+AIH,TomekLinks,4,test,n.d.,2
+AIH,TomekLinks,4,test,cured,2
+AIH,TomekLinks,4,train,__rows__,219
+AIH,TomekLinks,4,train,fatal,127
+AIH,TomekLinks,4,train,under treatment,62
+AIH,TomekLinks,4,train,cured,16
+AIH,TomekLinks,4,train,n.d.,14
+AIH,TomekLinks,5,test,__rows__,27
+AIH,TomekLinks,5,test,fatal,15
+AIH,TomekLinks,5,test,under treatment,8
+AIH,TomekLinks,5,test,n.d.,2
+AIH,TomekLinks,5,test,cured,2
+AIH,TomekLinks,5,train,__rows__,220
+AIH,TomekLinks,5,train,fatal,127
+AIH,TomekLinks,5,train,under treatment,62
+AIH,TomekLinks,5,train,cured,16
+AIH,TomekLinks,5,train,n.d.,15

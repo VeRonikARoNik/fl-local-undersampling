@@ -1,0 +1,13 @@
+--- original/federated_data_split_path2.py	2026-10-22 01:55:33.491593252 +0200
++++ fixed/federated_data_split_path2.py	2026-10-22 01:56:12.546811727 +0200
+@@ -291,7 +291,9 @@
+         return df
+ 
+     X = df.drop(columns=[label_column])
+-    y = df[label_column]
++    # FIX: integer-coded labels for the samplers (string labels break NeighbourhoodCleaningRule
++    # with SciPy >= 1.15); rows are restored from sample_indices_, so original labels are kept.
++    y = pd.Series(pd.factorize(df[label_column])[0], index=df.index)
+ 
+     # Kodowanie kategoryczne
+     X_enc = X.copy()

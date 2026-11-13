@@ -1,0 +1,25 @@
+{
+ "R2": 0.8946742230818744,
+ "resid_skew": -0.22337802821311048,
+ "resid_excess_kurtosis": 5.928931892429977,
+ "jarque_bera": [
+  127266.56769249658,
+  0.0
+ ],
+ "brown_forsythe_F1_by_method": [
+  682.0642397233942,
+  0.0
+ ],
+ "brown_forsythe_resid_by_method": [
+  626.357571488548,
+  0.0
+ ],
+ "brown_forsythe_resid_by_dataset": [
+  4905.6843933291,
+  0.0
+ ],
+ "resid_sd_overall_pct": 5.633598496707322,
+ "share_abs_resid_gt_10pct": 0.07729166666666666,
+ "spearman_omega2_raw_vs_rank": 1.0,
+ "rank_model_R2": 0.914076103716829
+}
