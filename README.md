@@ -12,8 +12,8 @@ Code, data, raw results and analysis scripts for the paper
 > Maritime University, Gdynia, Poland. Manuscript in preparation, 2026.
 
 Undersampling the majority classes on each client of a federation rebalances the local data and shortens local
-training, but nobody had measured systematically what it does to federations of tree-based learners. This repository
-holds a full factorial experiment that does: 86 400 one-shot federated runs on nine public tabular data sets, with nine
+training, but, to our knowledge, its effect on federations of tree-based learners had not been measured systematically.
+This repository holds a full factorial experiment that measures it: 86 400 one-shot federated runs on nine public tabular data sets, with nine
 undersampling methods and a baseline, four learners, six aggregation rules and 3 to 10 clients. Every table and figure of
 the paper can be regenerated from the stored results; re-running the federated experiment itself, which takes several
 days on a laptop, is optional.
